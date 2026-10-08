@@ -1,3 +1,6 @@
+# Protocol notes
+- See [PROTOCOL.md ](...)for the full reverse-engineering write-up: auth flow, endpoints, quirks, and working curl commands.
+
 # Urja Meter Ops API
 
 A clean, documented REST API over the [Urja Meter Ops portal](https://urja-ops.flockenergy.tech). Written in Java 17 (targeting JVM bytecode compatible with the original spec), Spring Boot 2.7.18, Gradle. Built as a submission for the Flock Energy backend exercise.
@@ -115,8 +118,6 @@ This anti-corruption layer means a portal-side change requires editing only a ma
 # Project Layout
 ![img_4.png](img_4.png)
 
-# Protocol notes
-- See [PROTOCOL.md ](...)for the full reverse-engineering write-up: auth flow, endpoints, quirks, and working curl commands.
 
 # Reflection
 - See [REFLECTION.md](...) for the 5 reflection questions.
