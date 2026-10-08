@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+portal:
+  base-url: ${PORTAL_BASE_URL:https://urja-ops.flockenergy.tech}
+  username: ${PORTAL_USERNAME:operator@urja.local}
+  password: ${PORTAL_PASSWORD:urja-ops-2026}
+  connect-timeout-ms: 5000
+  read-timeout-ms: 15000
+  session-ttl-seconds: 3600
+  session-refresh-safety-seconds: 300
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+logging:
+  level:
+    com.flock.urja: DEBUG
