@@ -419,15 +419,15 @@ logging:
     com.flock.urja: DEBUG
 ```
 
-| Property | Meaning | Default |
-| :--- | :--- | :--- |
+| Property | Meaning | Default                             |
+| :--- | :--- |:------------------------------------|
 | `portal.base-url` | Portal base URL | `https://urja-ops.flockenergy.tech` |
-| `portal.username` | Portal login email | `operator@urja.local` |
-| `portal.password` | Portal login password | `urja-ops-2026` |
-| `portal.connect-timeout-ms` | Outbound HTTP connect timeout | `5000` |
-| `portal.read-timeout-ms` | Outbound HTTP read timeout | `15000` |
-| `portal.session-ttl-seconds` | Expected cookie lifetime | `3600` (1 hour) |
-| `portal.session-refresh-safety-seconds` | Refresh cookie this many seconds before expiry | `300` (5 min) |
+| `portal.username` | Portal login email | `example username`                  |
+| `portal.password` | Portal login password | `example password`                  |
+| `portal.connect-timeout-ms` | Outbound HTTP connect timeout | `5000`                              |
+| `portal.read-timeout-ms` | Outbound HTTP read timeout | `15000`                             |
+| `portal.session-ttl-seconds` | Expected cookie lifetime | `3600` (1 hour)                     |
+| `portal.session-refresh-safety-seconds` | Refresh cookie this many seconds before expiry | `300` (5 min)                       |
 
 
 ## Example 
