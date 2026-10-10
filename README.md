@@ -225,19 +225,33 @@ original request is retried **once**. If the retry also fails, the error
 propagates as a `PortalException` and the API returns 502.
 
 # Setup
-## Setup
 
 ### Prerequisites
 
 | Requirement | Version | Notes |
 | :--- | :--- | :--- |
-| JDK | 17 or later | Any distribution — Temurin, Microsoft OpenJDK, Oracle. Verify with `java -version`. |
-| Git | any recent | Only needed to clone. |
-| A terminal | Git Bash / cmd / PowerShell | |
+| **JDK** | 17 or later | Any distribution — Temurin, Microsoft OpenJDK, Oracle. Verify with `java -version`. |
+| **Git** | any recent | Only needed to clone. |
+| **A terminal** | Git Bash / cmd / PowerShell | |
+| **Internet** | on first run only | For downloading Gradle + dependencies. |
 
-No need to install Gradle — the project ships with a Gradle wrapper (`gradlew`).
+**What you don't need to install:**
 
-No need to install Spring Boot, Tomcat, or any runtime — Spring Boot embeds Tomcat.
+- **Gradle** — the project ships with a Gradle wrapper (`gradlew`). It
+  downloads the correct Gradle version on first run.
+- **Spring Boot** — pulled in as a library dependency by Gradle.
+- **Tomcat** — the servlet container is embedded in the Spring Boot JAR and
+  starts inside your Java process. There is no separate Tomcat install.
+- **Any other app server** — same reason.
+
+**What you DO need:**
+
+- **JDK 17 or later.** Java must be installed on your machine. Spring Boot
+  runs *on* the JVM; it doesn't replace it.
+
+**Internet is required on the first run.** The Gradle wrapper downloads
+Gradle itself (~100MB) plus Maven Central dependencies (~50MB). After
+that, everything is cached locally and works offline.
 
 ### 1. Clone the repository
 
